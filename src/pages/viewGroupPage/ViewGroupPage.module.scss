@@ -1,0 +1,11 @@
+@import '../../StyleConstants.scss';
+
+.container{
+    height: calc(100% - 64px);
+    overflow-y: auto;
+
+    & > *{
+        
+    }
+
+}

@@ -1,0 +1,98 @@
+@import '../../StyleConstants.scss';
+
+body {
+    background-color: none;
+}
+
+
+.screen{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $almost-black-darker;
+}
+
+.container {
+    border-radius: 40px;
+    background-color: $almost-black-lighter;
+    width: 342px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    outline:2px solid rgba(255, 255, 255, 0.144);
+    outline-offset: -2px;
+
+    box-shadow: 0px 0px 10px black;
+
+    h1{
+        font-size: 18px;
+        color:$secondary;
+    }
+
+    .logo{
+        width: 180px;
+        object-fit: cover;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        input {
+            width: 260px;
+            height: 38px;
+            border-radius: 15px;
+            padding-left: 10px;
+            border: 2px solid $almost-white;
+            font-size: 18px;
+            background: none;
+            color:$primary;
+        }
+
+        select{
+            width: 274px;
+            height: 42px;
+            border-radius: 15px;
+            padding-left: 10px;
+            border: 2px solid $almost-white;
+            font-size: 18px;
+            background: none;
+            color:$primary;
+
+            option{
+                background-color: $almost-black;
+            }
+        }
+
+        button {
+            width: 100px;
+            height: 38px;
+            border-radius: 19px;
+            background: #FF512F;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #dd2477, #ff522f);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #dd2477, #ff522f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: none;
+            color:$primary;
+            font-size: 14px;
+
+            &:hover{
+                box-shadow: 0px 0px 10px $primary;
+            }
+        }
+    }
+    a{
+        margin-top:10px;
+        margin-bottom: 18px;
+        text-decoration: none;
+        color:$primary;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

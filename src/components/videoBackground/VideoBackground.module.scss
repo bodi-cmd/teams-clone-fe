@@ -1,0 +1,11 @@
+@import '../../StyleConstants.scss';
+
+.video {
+    position: fixed;
+    left: -20px;
+    top: -20px;
+    min-width: 110%; 
+    min-height: 110%;
+    filter: blur(5px);
+    z-index: -999;
+  }

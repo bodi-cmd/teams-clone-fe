@@ -1,0 +1,19 @@
+@import '../../StyleConstants.scss';
+
+
+.contacts{
+    width: 100%;
+    height: 100%;
+    background-color: $almost-black-darker;
+    overflow-y: auto;
+}
+
+.chatContainer{
+    
+    width: 100%;
+    height: calc(100% - 64px);
+}
+
+.chatBox{
+    height: calc(100% - 64px);
+}

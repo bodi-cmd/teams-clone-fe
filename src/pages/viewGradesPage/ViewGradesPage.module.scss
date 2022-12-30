@@ -1,0 +1,26 @@
+@import '../../StyleConstants.scss';
+
+
+.container{
+
+    height: calc(100% - 64px);
+    overflow-y: auto;
+    width: 100%;
+    background-color: $almost-black-darker;
+
+    span{
+        margin-right:20px;
+    }
+
+    .failed{
+        color:rgb(255, 0, 0);
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .passed{
+        color:rgb(0, 255, 21);
+        font-weight: 600;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,71 @@
+@import '../../StyleConstants.scss';
+
+.container{
+    height: calc(100% - 64px);
+    background-color: $almost-black-darker;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+
+
+    .col{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    h1{
+        color:$primary;
+        width: 500px;
+        font-size: 18px;
+    }
+
+    img{
+        width: 256px;
+        height: 256px;
+        border-radius: 8px;
+    }
+
+    .inputField{
+        width: 500px;
+        height: 20px;
+        resize:none;
+        background-color: $almost-black-lighter;
+        outline:1px solid rgba(255, 255, 255, 0.259);
+        outline-offset: -1px;
+        color:$primary;
+        border: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+    }
+
+    button {
+        height: 36px;
+        padding-inline: 10px;
+        border-radius: 5px;
+        background-color: $secondary;
+        color: $primary;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        margin-top:20px;
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $secondary-hover;
+        }
+    }
+
+}
