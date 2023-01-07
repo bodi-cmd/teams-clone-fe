@@ -1,0 +1,36 @@
+@import '../../StyleConstants.scss';
+
+
+.navbar {
+    width: 100%;
+    height: 48px;
+    background-color: $almost-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+        width: clamp(80px, calc(100% - 36px), 680px);
+        height: 32px;
+        border: none;
+        border-radius: 5px;
+        background-color: $almost-black-darker;
+        color: $almost-white;
+        padding-left: 20px;
+        font-size: 16px;
+        color:$primary;
+
+        &::placeholder {
+            color: $almost-white-darker;
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: $almost-white-darker;
+        }
+
+        &::-ms-input-placeholder {
+            color: $almost-white-darker;
+        }
+    }
+}

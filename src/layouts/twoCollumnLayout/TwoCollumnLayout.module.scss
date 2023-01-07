@@ -1,0 +1,21 @@
+@import '../../StyleConstants.scss';
+
+.left{
+    position: fixed;
+    left:72px;
+    width:clamp(200px, calc(100% - 72px), 300px);
+    box-shadow:0px 0px 10px black;
+    height: calc(100% - 48px);
+}
+
+.right{
+    margin-left:300px;
+    width:auto;
+    height: 100%;
+
+
+    @media (max-width: 768px) {
+  
+        margin-left:0px;
+    }
+}

@@ -1,0 +1,59 @@
+@import '../../StyleConstants.scss';
+
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: $almost-white;
+
+    // background: #dc24249c; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #dc24246b rgba(74, 86, 157, 0.541)); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #dc24246b, rgba(74, 86, 157, 0.541)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd24775e, #ff522f4f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd24771c, #ff522f18); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    //backdrop-filter: blur(50px);
+
+    outline:1px solid rgba(255, 255, 255, 0.281);
+    outline-offset: -1px;
+    box-shadow: 0px 0px 10px black;
+    max-width: 70%;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:hover{
+        background-color: $almost-white-darker;
+        cursor: pointer;
+    }
+
+    .initials{
+        height: 72px;
+        width: 72px;
+        background-color: $secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        color: $primary;
+        text-shadow: 1px 1px 3px black;
+        border-radius: 12px;
+        margin-bottom: 20px;
+
+        box-shadow: 0 0 5px $secondary;
+    }
+
+    .title{
+        height: 40px;
+        color: $primary;
+        text-shadow: 1px 1px 5px black;
+        max-width: 180px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,55 @@
+@import '../../StyleConstants.scss';
+
+
+.row{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:10px;
+    transition: 0.2s ease-out;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $primary-dark;
+        transition: 0.2s ease-in;
+    }
+
+    .collumn{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    h1{
+        color:$primary;
+        font-size: 18px;
+        margin-left:10px;
+    }
+    h2{
+        color:$primary-dark;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left:10px;
+    }
+    img{
+        width: 48px;
+        height:  48px;
+        border-radius: 24px;
+        object-fit: cover;
+    }
+
+    .initials{
+        height: 48px;
+        width: 48px;
+        background-color: $secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: $primary;
+        text-shadow: 1px 1px 3px black;
+        border-radius: 8px;
+    }
+
+}

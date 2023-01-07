@@ -1,0 +1,42 @@
+@import './StyleConstants.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans'
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: $almost-black-lighter;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $almost-black-lighter; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-dark;
+}

@@ -1,0 +1,13 @@
+@import '../../StyleConstants.scss';
+
+.container{
+    width: clamp(100px, calc(100% - 86px), 700px);
+    position: absolute;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.267);
+    border-radius: 5px;
+    background-color: $almost-black-opaque;
+    overflow-y: auto;
+    max-height: 300px;
+    top:45px;
+    z-index: 10;
+}

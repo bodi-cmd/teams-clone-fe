@@ -1,0 +1,21 @@
+@import '../../StyleConstants.scss';
+
+
+.left{
+    position: fixed;
+    height:100%;
+    margin:0;
+    padding: 0;
+    left: 0;
+}
+
+.top{
+    width: calc(100% - 72px);
+    margin-left: 72px;
+    padding: 0;
+}
+
+.content{
+    margin-left: 72px;
+    height: calc(100% - 48px);
+}

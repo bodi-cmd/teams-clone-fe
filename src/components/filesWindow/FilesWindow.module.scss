@@ -1,0 +1,78 @@
+@import '../../StyleConstants.scss';
+
+.filesContainer {
+    width: 100%;
+    height: 100%;
+    background-color: $almost-black-darker;
+    overflow-y: auto;
+
+    button {
+        width: 120px;
+        height: 36px;
+        border-radius: 5px;
+        background-color: $secondary;
+        color: $primary;
+        font-size: 14px;
+        margin: 10px;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border:none;
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary-hover;
+        }
+    }
+
+    .fileRow {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+        align-items: center;
+        background-color: $almost-black-lighter;
+        margin-top: 2px;
+        border-bottom: 1px solid $almost-white;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: $primary;
+
+        span {
+            width: 30%;
+        }
+
+
+        img {
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            margin-right: 18px;
+        }
+
+        a {
+            color: $secondary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                width: 80px;
+            }
+
+            .icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+
+    }
+
+}
