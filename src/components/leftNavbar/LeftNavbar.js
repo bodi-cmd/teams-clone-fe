@@ -2,10 +2,17 @@ import React, { useEffect, useState } from "react";
 import styles from "./LeftNavbar.module.scss";
 import { buttons } from "./NavbarButtons";
 import { useNavigate } from "react-router-dom";
+import SessionStorage from '../sessionStorage/SessionStorage.ts';
 
 const LeftNavbar = () => {
   const navigate = useNavigate();
   const [selected, setSelected] = useState();
+  const sessionStorage = SessionStorage();
+
+  useEffect(() => {
+    const userRole = sessionStorage.getItemJSON("user").role;
+    
+  }, []);
 
   useEffect(() => {
     setSelected(window.location.pathname);
@@ -14,6 +21,7 @@ const LeftNavbar = () => {
   const renderButtonsByPosition = (position) => {
     return buttons
     .filter((button) => button.position === position)
+    .filter((button) => button.role ? button.role === sessionStorage.getItemJSON("user").role : true)
     .map((button) => {
       const Icon = button.icon;
       return (

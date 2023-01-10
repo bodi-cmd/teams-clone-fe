@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.face459d.css",
-    "main.js": "/static/js/main.0a67c82c.js",
+    "main.css": "/static/css/main.62b33026.css",
+    "main.js": "/static/js/main.ad221d8c.js",
     "static/js/787.67cf1e35.chunk.js": "/static/js/787.67cf1e35.chunk.js",
     "static/media/liquid-gradient.mp4": "/static/media/liquid-gradient.8283151cf4caf87f6d8f.mp4",
     "static/media/logo.png": "/static/media/logo.22a731b622d57345aa67.png",
     "index.html": "/index.html",
     "static/media/x.svg": "/static/media/x.90fe446a7a2d96d2ce804c49eb1032eb.svg",
-    "main.face459d.css.map": "/static/css/main.face459d.css.map",
-    "main.0a67c82c.js.map": "/static/js/main.0a67c82c.js.map",
+    "main.62b33026.css.map": "/static/css/main.62b33026.css.map",
+    "main.ad221d8c.js.map": "/static/js/main.ad221d8c.js.map",
     "787.67cf1e35.chunk.js.map": "/static/js/787.67cf1e35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.face459d.css",
-    "static/js/main.0a67c82c.js"
+    "static/css/main.62b33026.css",
+    "static/js/main.ad221d8c.js"
   ]
 }

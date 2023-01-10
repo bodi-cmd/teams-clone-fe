@@ -13,10 +13,12 @@ import TokenProvider from "../../components/tokenProvider/TokenProvider";
 import Modal from "../../components/modal/Modal";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useRef } from "react";
 
 const ChatPage = () => {
+  const ref = useRef(null);
   const [contacts, setContacts] = useState([]);
-  const [messagesData, setMessagesData] = useState({sender:null, receiver:null, messages:[]});
+  const [messagesData, setMessagesData] = useState({ sender: null, receiver: null, messages: [] });
   const [typingMessage, setTypingMessage] = useState("");
   const [selectedUser, setSelectedUser] = useState({
     id: "",
@@ -25,6 +27,7 @@ const ChatPage = () => {
     username: "",
     profilePicture: null,
   });
+  const [getMessagesWrapper, setGetMessagesWrapper] = useState({f:()=>{}});
 
   const [errors, setErrors] = useState(null);
   const HTTP = RequestHelper(CONFIG.SERVER_ADRESS);
@@ -75,6 +78,15 @@ const ChatPage = () => {
     fetchContacts();
   }, []);
 
+  useEffect(() => {
+    let interval = setInterval(() => {
+      getMessagesById(selectedUser.id);
+    }, 2000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [selectedUser]);
+
   const leftCollumn = (
     <React.Fragment>
       <GenericMiniNavbar title={"Chat"} />
@@ -119,27 +131,29 @@ const ChatPage = () => {
         }
       />
       <div className={styles.chatContainer}>
-      <ChatWindow
-        inputValue={typingMessage}
-        setInputValue={setTypingMessage}
-        handleSend={() => {
-          if(typingMessage.length){
-            sendMessageToUser(selectedUser.id, typingMessage);
-            setTypingMessage("");
-          }
-        }}
-        messages={messagesData.messages.map((msg) => {
-          const name = msg.fromMe ? messagesData.sender.name : messagesData.receiver.name;
-          const image = msg.fromMe ? messagesData.sender.profilePicture : messagesData.receiver.profilePicture;
-          return {
-            name,
-            image,
-            message: msg.content,
-            fromMe: msg.fromMe,
-            date: msg.date,
-          };
-        })}
-      />
+        <ChatWindow
+          inputValue={typingMessage}
+          setInputValue={setTypingMessage}
+          handleSend={() => {
+            if (typingMessage.length) {
+              sendMessageToUser(selectedUser.id, typingMessage);
+              setTypingMessage("");
+            }
+          }}
+          messages={messagesData.messages.map((msg) => {
+            const name = msg.fromMe ? messagesData.sender.name : messagesData.receiver.name;
+            const image = msg.fromMe
+              ? messagesData.sender.profilePicture
+              : messagesData.receiver.profilePicture;
+            return {
+              name,
+              image,
+              message: msg.content,
+              fromMe: msg.fromMe,
+              date: msg.date,
+            };
+          })}
+        />
       </div>
     </React.Fragment>
   );

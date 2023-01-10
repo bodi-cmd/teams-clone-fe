@@ -15,6 +15,7 @@ import ViewProfile from "./pages/viewProfile/ViewProfile";
 import ViewNotifications from "./pages/viewNotifications/ViewNotifications";
 import ViewGradesPage from "./pages/viewGradesPage/ViewGradesPage";
 import ViewAssignmentsPage from "./pages/viewAssignmentsPage/ViewAssignmentsPage";
+import UsersPage from "./pages/usersPage/UsersPage";
 
 function App() {
   const application = (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/notifications" element={<ViewNotifications/>}></Route>
         <Route path="/grades" element={<ViewGradesPage/>}></Route>
         <Route path="/tasks" element={<ViewAssignmentsPage/>}></Route>
+        <Route path="/users" element={<UsersPage/>}></Route>
       </Routes>
     </LeftTopNavbarLayout>
   );

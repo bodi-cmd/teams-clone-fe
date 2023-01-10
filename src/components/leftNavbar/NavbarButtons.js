@@ -2,7 +2,7 @@ import { FaUsers,FaUserCog } from "react-icons/fa";
 import { BsFillChatDotsFill, BsFillBellFill } from "react-icons/bs";
 import { MdAssignment } from "react-icons/md";
 import { RiNumbersFill } from "react-icons/ri";
-import { FiLogOut } from "react-icons/fi";
+import { FiLogOut,FiUsers } from "react-icons/fi";
 
 
 export const buttons = [
@@ -47,5 +47,12 @@ export const buttons = [
     text:"Logout",
     url: "/login",
     position:"DOWN",
+  },
+  {
+    icon: FiUsers,
+    text:"Users",
+    url: "/users",
+    position:"UP",
+    role:"ADMIN"
   },
 ];

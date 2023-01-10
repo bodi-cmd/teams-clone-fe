@@ -179,7 +179,23 @@ const ViewGroupPage = () => {
           }
         />
       )}
-      <GenericMiniNavbar title={groupMetaData.name} buttons={navbarButtons} />
+      <GenericMiniNavbar
+        title={groupMetaData.name}
+        buttons={[
+          ...navbarButtons,
+          {
+            text: `Enroll Key`,
+            onClick: () => {
+              setErrors({
+                title:"Enroll Key",
+                message:["Give the following key to people so they can join your group",`KEY: ${groupMetaData.enrollKey}`],
+                buttons:[],
+              })
+            },
+            selected: false,
+          },
+        ]}
+      />
       <div className={styles.container}>
         {selectedPage === "POSTS" && (
           <ChatWindow
@@ -204,9 +220,7 @@ const ViewGroupPage = () => {
             })}
           />
         )}
-        {selectedPage === "FILES" && (
-          <FilesWindow files={files} onUpload={handleUpload} />
-        )}
+        {selectedPage === "FILES" && <FilesWindow files={files} onUpload={handleUpload} />}
         {selectedPage === "ASSIGNMENTS" && (
           <AssignmentsWindow
             assignments={assignments}
