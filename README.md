@@ -117,17 +117,17 @@ fiecare având următoarele operații disponibile:
     -   Primește note
 
 ![Graphical user interface Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image1.png){width="6.5in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image1.png){width="6.5in"
 height="3.685416666666667in"}
 
 **2. Modele use-case**
 
 ![Diagram Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image2.jpg){width="6.569444444444445in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image2.jpg){width="6.569444444444445in"
 height="8.501010498687664in"}
 
 ![Diagram Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image3.png){width="6.5in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image3.png){width="6.5in"
 height="8.785416666666666in"}
 
 **3. Arhitectura**
@@ -202,7 +202,7 @@ git, serverele vor lua ultima versiune de cod si o vor rula.
 
 ***3.2. Diagrama arhitecturii***
 
-![](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image4.png){width="6.393576115485565in"
+![](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image4.png){width="6.393576115485565in"
 height="4.9375in"}
 
 ***\
@@ -211,7 +211,7 @@ height="4.9375in"}
 ***3.3. Diagrama bazei de date***
 
 ![Diagram Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image5.png){width="6.28125in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image5.png){width="6.28125in"
 height="5.48871062992126in"}
 
 **4. Specificații non-funcționale**
@@ -304,7 +304,7 @@ se enumeră:
 Teste IntelliJ:
 
 ![Text Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image6.png){width="2.950255905511811in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image6.png){width="2.950255905511811in"
 height="1.3334492563429572in"}
 
 Teste Postman:
@@ -315,58 +315,58 @@ următoarele:
 -   Parola invalidă creare cont
 
 ![Graphical user interface, text Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image7.png){width="6.5in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image7.png){width="6.5in"
 height="3.1951388888888888in"}
 
 -   Creare cont valid
 
 ![Text Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image8.png){width="6.5in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image8.png){width="6.5in"
 height="3.3652777777777776in"}
 
 -   Cont duplicat
 
 ![A screenshot of a computer Description automatically generated with
 medium
-confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image9.png){width="3.2086111111111113in"
+confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image9.png){width="3.2086111111111113in"
 height="3.475300743657043in"}
 
 -   Logare parola invalidă
 
 ![A screenshot of a computer Description automatically generated with
 medium
-confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image10.png){width="3.0502646544181977in"
+confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image10.png){width="3.0502646544181977in"
 height="3.400294181977253in"}
 
 -   Logare validă
 
 ![Text Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image11.png){width="6.5in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image11.png){width="6.5in"
 height="3.3826388888888888in"}
 
 -   Logare cont inactiv
 
 ![A screenshot of a computer Description automatically generated with
 medium
-confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image12.png){width="3.2252799650043746in"
+confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image12.png){width="3.2252799650043746in"
 height="3.3752919947506563in"}
 
 -   Creare grup
 
 ![Text Description automatically
-generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image13.png){width="3.3919608486439197in"
+generated](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image13.png){width="3.3919608486439197in"
 height="4.43371719160105in"}
 
 -   Creare grup de către student
 
-![](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image14.png){width="4.000346675415573in"
+![](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image14.png){width="4.000346675415573in"
 height="3.3752919947506563in"}
 
 -   Intrare multiplă în cont
 
 ![A screenshot of a computer Description automatically generated with
 medium
-confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/media_for_readme/image15.png){width="5.400468066491689in"
+confidence](https://raw.githubusercontent.com/bodi-cmd/teams-clone-fe/master/media_for_readme/image15.png){width="5.400468066491689in"
 height="3.4669674103237096in"}
 
 **6. Dezvoltări ulterioare**
