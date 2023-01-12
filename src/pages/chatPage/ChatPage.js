@@ -47,7 +47,7 @@ const ChatPage = () => {
         return;
       } else {
         setContacts(data.data);
-        if (data.data.length) setSelectedUser(data.data[0]);
+        if (data.data.length && !selectedUser.id) setSelectedUser(data.data[0]);
       }
     });
   };
